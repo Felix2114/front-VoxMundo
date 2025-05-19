@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           seedColor: const Color.fromARGB(255, 251, 250, 253),
         ),
       ),
-      home: const LoginPage(), // Pantalla inicial
+      home: const LoginPage(), // aca se pone la pantalla inicial
     );
   }
 }
