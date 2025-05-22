@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'settings_page.dart';
+//import 'settings_page.dart';
 import 'translator_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
 
   final List<Widget> _screens = const [
     TranslatorPage(),
-    SettingsPage(),
+    //SettingsPage(),
   ];
 
   void _onItemTapped(int index) {
