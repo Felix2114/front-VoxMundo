@@ -36,59 +36,59 @@ class SettingsPage extends StatelessWidget {
         const Divider(),
 
         _buildSettingsItem(
-  context,
-  'Cambiar Contraseña',
-  Icons.lock,
-  () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const ChangePasswordPage()),
-    );
-  },
-),
-_buildSettingsItem(
-  context,
-  'Idioma',
-  Icons.language,
-  () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const LanguagePage()),
-    );
-  },
-),
-_buildSettingsItem(
-  context,
-  'Privacidad y Seguridad',
-  Icons.privacy_tip,
-  () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const PrivacyPage()),
-    );
-  },
-),
-_buildSettingsItem(
-  context,
-  'Ayuda',
-  Icons.help_outline,
-  () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const HelpPage()),
-    );
-  },
-),
-
-
-        
+          context,
+          'Cambiar Contraseña',
+          Icons.lock,
+          () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const ChangePasswordPage()),
+            );
+          },
+        ),
+        _buildSettingsItem(
+          context,
+          'Idioma',
+          Icons.language,
+          () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const LanguagePage()),
+            );
+          },
+        ),
+        _buildSettingsItem(
+          context,
+          'Privacidad y Seguridad',
+          Icons.privacy_tip,
+          () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const PrivacyPage()),
+            );
+          },
+        ),
+        _buildSettingsItem(
+          context,
+          'Ayuda',
+          Icons.help_outline,
+          () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const HelpPage()),
+            );
+          },
+        ),
       ],
     );
   }
 
-  // 👇 Agrega el parámetro onTap
   ListTile _buildSettingsItem(
-      BuildContext context, String title, IconData icon, VoidCallback onTap) {
+    BuildContext context,
+    String title,
+    IconData icon,
+    VoidCallback onTap,
+  ) {
     return ListTile(
       leading: Icon(icon),
       title: Text(title),
