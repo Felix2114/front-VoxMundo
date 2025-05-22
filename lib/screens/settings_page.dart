@@ -22,7 +22,7 @@ class SettingsPage extends StatelessWidget {
         const SizedBox(height: 10),
         const Center(
           child: Text(
-            'Poke',
+            'Pokemoncito',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
         ),
