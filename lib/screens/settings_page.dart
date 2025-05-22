@@ -83,7 +83,7 @@ class SettingsPage extends StatelessWidget {
     );
   }
 
-  ListTile _buildSettingsItem(
+  ListTile _buildSettingsItem( 
     BuildContext context,
     String title,
     IconData icon,
